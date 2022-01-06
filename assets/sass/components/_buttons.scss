@@ -1,0 +1,18 @@
+.btn {
+    @include button;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        @include pseudo-element;
+        z-index: -1;
+        opacity: 0;
+        border-radius: $radius;
+        background: linear-gradient(lighten($colorSecondary, 2),lighten($colorPrimary, 2));
+        box-shadow: 4px 4px 8px darken($color: #00000042, $amount: 10);
+        transition: opacity 250ms;
+    }
+}

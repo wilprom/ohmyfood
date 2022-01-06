@@ -1,0 +1,11 @@
+.header {
+    box-shadow: 0 0 12px rgb(0 0 0 / 25%);
+    padding: 1rem;
+    position: relative;
+    z-index: 1000;
+    &__title {
+        margin: 0;
+        text-align: center;
+        text-transform: lowercase;
+    }
+}

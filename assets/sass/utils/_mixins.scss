@@ -1,0 +1,30 @@
+@mixin grid-layout {
+    display: grid;
+}
+
+@mixin flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin button {
+    color: #ffffff;
+    background: linear-gradient($colorSecondary, $colorPrimary) ;
+    border-style: none;
+    border-radius: $radius;
+    padding: .8rem 1.6rem;
+    font-size: map-get($map: $font-size, $key: button);
+    font-weight: bold;
+    box-shadow: 4px 4px 8px #00000042;
+    cursor: pointer;
+    position: relative;
+}
+
+@mixin pseudo-element {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

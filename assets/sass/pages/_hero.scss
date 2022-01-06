@@ -1,0 +1,10 @@
+.hero {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 1rem 1rem 1.2rem 1rem;
+    &__text {
+        font-weight: 300;
+        padding-top: .1rem;
+        margin-bottom: .8rem;
+    }
+}
