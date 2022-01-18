@@ -15,7 +15,7 @@
     padding: .8rem 1.6rem;
     font-size: map-get($map: $font-size, $key: button);
     font-weight: bold;
-    box-shadow: 4px 4px 8px #00000042;
+    box-shadow: .25rem .25rem .6rem #00000042;
     cursor: pointer;
     position: relative;
 }

@@ -1,0 +1,52 @@
+.restaurant {
+    background-color: #f6f6f6;
+    padding: 2rem;
+}
+
+.cards {
+    @include grid-layout;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem 2rem;
+    .card {
+        display: block;
+        background-color: #ffffff;
+        border-radius: $radius - 1;
+        position: relative;
+        figure {
+            margin: 0;
+        }
+        &__icon {
+            position: absolute;
+            right: 1rem;
+            bottom: 1.5rem;
+        }
+        &__icon-spc {
+            opacity: 0;
+            color: darken($color: $colorSecondary, $amount: 32);
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &__img {
+            height: 12rem;
+            width: 100%;
+            border-radius: $radius - 1 $radius - 1 0 0 ;
+            object-fit: cover;
+        }
+        &__title {
+            margin: 1rem 0 .2rem 1rem;
+        }
+        &__text {
+            margin: 0 0 1rem 1rem;
+        }
+        &__label {
+            position: absolute;
+            top: 1rem;
+            right: .8rem;
+            padding: .5rem;
+            color: darken($color: $colorTertiary, $amount: 50);
+            border-radius: $radius - 1.8;
+            background-color: $colorTertiary;
+        }
+    }
+}
