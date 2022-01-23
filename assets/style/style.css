@@ -16,7 +16,7 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, .footer__title {
   font-family: "Shrikhand", "cursive";
 }
 
@@ -61,6 +61,33 @@ h1 {
   margin: 0;
   text-align: center;
   text-transform: lowercase;
+}
+
+.footer {
+  background-color: #353535;
+  margin: 0;
+  padding: 1rem 0 0.1rem 0;
+}
+.footer__title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0 0 3rem 2rem;
+}
+.footer__list {
+  list-style-type: none;
+  margin-left: -0.5rem;
+}
+.footer__list li {
+  margin-bottom: 0.5rem;
+}
+.footer__list a {
+  color: #ffffff;
+}
+.footer__icon {
+  margin-right: 1rem;
+}
+.footer__icon--spc {
+  margin-right: 0.6rem;
 }
 
 .location {

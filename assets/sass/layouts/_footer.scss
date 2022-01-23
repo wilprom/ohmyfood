@@ -1,0 +1,26 @@
+.footer {
+    background-color: #353535;
+    margin: 0;
+    padding: 1rem 0 .1rem 0;
+    &__title {
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin: 0 0 3rem 2rem;
+    }
+    &__list {
+        list-style-type: none;
+        margin-left: -.5rem;
+        & li {
+            margin-bottom: .5rem;
+        }
+        & a {
+            color: #ffffff;
+        }
+    }
+    &__icon {
+        margin-right: 1rem;
+        &--spc {
+            margin-right: .6rem;
+        }
+    }
+}
