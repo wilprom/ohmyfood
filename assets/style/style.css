@@ -16,7 +16,7 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-h1, .footer__title {
+h1, .header-menu__title, .footer__title {
   font-family: "Shrikhand", "cursive";
 }
 
@@ -49,6 +49,44 @@ h1, .footer__title {
   background: linear-gradient(#ff8de0, #9e67e0);
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2588235294);
   transition: opacity 250ms;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+}
+.icon:hover::before {
+  opacity: 1;
+}
+.icon:hover .icon__like--noBg {
+  opacity: 0;
+}
+.icon:hover .icon__like--bg {
+  opacity: 1;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: linear-gradient(#ff8de0, #9e67e0);
+}
+.icon__like {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: opacity 0.25s;
+  mix-blend-mode: lighten;
 }
 
 .header {
@@ -174,30 +212,28 @@ h1, .footer__title {
 .cards .card figure {
   margin: 0;
 }
-.cards .card__icon {
-  position: absolute;
-  right: 1rem;
-  bottom: 1.5rem;
-}
-.cards .card__icon-spc {
-  opacity: 0;
-  color: #d5009a;
-  transition: opacity 300ms;
-}
-.cards .card__icon-spc:hover {
-  opacity: 1;
-}
 .cards .card__img {
   height: 12rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
 }
+.cards .card__footer {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.cards .card__content {
+  flex: 1;
+}
 .cards .card__title {
-  margin: 1rem 0 0.2rem 1rem;
+  margin: 0;
 }
 .cards .card__text {
-  margin: 0 0 1rem 1rem;
+  margin: 0.2rem 0;
+}
+.cards .card .icon {
+  margin: auto 0;
 }
 .cards .card__label {
   position: absolute;

@@ -1,0 +1,36 @@
+.icon {
+    height: 2rem;
+    width: 2rem;    
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    &:hover{
+        &::before {
+            opacity: 1;
+        }
+        & .icon__like {
+            &--noBg {
+                opacity: 0;
+            }
+            &--bg {
+                opacity: 1;
+            }
+        }
+    }
+    &::before {
+        @include pseudo-element;
+        opacity: 0;
+        transition: opacity 0.5s;
+        background: linear-gradient(lighten($colorSecondary, 4),lighten($colorPrimary, 4));
+    }
+    &__like {
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transition: opacity .25s;
+        mix-blend-mode: lighten;
+    }
+}
