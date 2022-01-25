@@ -175,6 +175,7 @@ h1, .footer__title {
 .cards .card__icon-spc {
   opacity: 0;
   color: #d5009a;
+  transition: opacity 300ms;
 }
 .cards .card__icon-spc:hover {
   opacity: 1;

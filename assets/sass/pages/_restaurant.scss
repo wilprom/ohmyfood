@@ -23,6 +23,7 @@
         &__icon-spc {
             opacity: 0;
             color: darken($color: $colorSecondary, $amount: 32);
+            transition: opacity 300ms;
             &:hover {
                 opacity: 1;
             }
