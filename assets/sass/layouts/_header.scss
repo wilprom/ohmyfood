@@ -8,4 +8,11 @@
         text-align: center;
         text-transform: lowercase;
     }
+    &__arrow {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        bottom: 0;
+        left: 2rem;
+    }
 }

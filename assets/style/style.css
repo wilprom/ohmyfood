@@ -62,6 +62,13 @@ h1, .footer__title {
   text-align: center;
   text-transform: lowercase;
 }
+.header__arrow {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  bottom: 0;
+  left: 2rem;
+}
 
 .footer {
   background-color: #353535;
