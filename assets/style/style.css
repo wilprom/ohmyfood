@@ -163,7 +163,7 @@ h1, .header-menu__title, .footer__title {
 }
 .helpMenu__steps {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   margin-left: 0.8rem;
 }
@@ -200,7 +200,7 @@ h1, .header-menu__title, .footer__title {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem 2rem;
 }
 .cards .card {

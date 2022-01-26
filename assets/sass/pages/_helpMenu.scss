@@ -2,7 +2,7 @@
     padding: .8rem 2rem 2rem;
     &__steps {
         @include grid-layout;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         margin-left: .8rem;
         &__step { 
