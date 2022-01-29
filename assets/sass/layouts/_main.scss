@@ -1,0 +1,73 @@
+.heroMenu {           
+    &__img {
+        height: 32rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.restaurantMenu {
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 5;
+    margin: -4.2rem 2.2rem 0;
+    padding: 2.4rem 1rem 3rem;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    & .headerMenu {
+        @include flexbox;
+        justify-content: space-between;
+        &__title {
+            margin: 0;
+        }
+        & .icon {
+            margin: .4rem 1rem 0 0;
+            &__like {
+                background-color: #f6f6f6;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+.subMenu{
+    @include grid-layout;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem 3rem;
+    &__item {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: .4rem;
+            height: 8%;
+            width: 12%;
+            background-color: darken($color: $colorTertiary, $amount: 20);
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    &__food {
+        background-color: #ffffff;
+        @include flexbox;
+        padding: 1rem;
+        border-radius: $radius - 1.2;
+        box-shadow: .10rem .10rem 1rem #00000021;
+    }
+    &__content {
+        flex: 1;
+        & h4, span {
+            margin: 0;
+        }
+    }
+    &__price {
+        font-weight: 700;
+        margin-top: 1.2rem;
+    }
+}
+.orderValidation {
+    @include flexbox;
+    justify-content: center;
+    margin-top: 4rem;
+}

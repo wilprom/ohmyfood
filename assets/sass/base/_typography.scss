@@ -3,6 +3,6 @@
 body, html{
     font-family: map-get($map: $font-family, $key: texte), sans-serif;
 }
-h1, .footer__title {
+h1, .headerMenu__title, .footer__title {
     font-family: map-get($map: $font-family, $key: titre), "cursive";
 }
