@@ -51,19 +51,49 @@
     &__food {
         background-color: #ffffff;
         @include flexbox;
-        padding: 1rem;
         border-radius: $radius - 1.2;
         box-shadow: .10rem .10rem 1rem #00000021;
+        overflow: hidden;
+        &:hover{
+            & .subMenu__check {
+                margin-right: 0;
+                & i {
+                    transform: rotate(0);
+                }
+            }
+        }
     }
     &__content {
         flex: 1;
-        & h4, span {
+        margin: 1rem;
+        overflow: hidden;
+        & h4, p {
             margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     }
     &__price {
         font-weight: 700;
-        margin-top: 1.2rem;
+        margin: 2.25rem 1rem 0 0;
+    }
+    &__check {
+        background-color: $colorTertiary;
+        @include flexbox;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        margin: 0 -4rem 0 0;
+        border-top-right-radius: $radius - 1.2;
+        border-bottom-right-radius: $radius - 1.2;
+        transition: margin 500ms;
+        & i {
+            font-size: 1.6rem;
+            color: #ffffff;
+            transform: rotate(90deg);
+            transition: transform 500ms cubic-bezier(.36,.44,0,.88);
+        }
     }
 }
 .orderValidation {
