@@ -40,7 +40,7 @@
             bottom: .4rem;
             height: 8%;
             width: 12%;
-            background-color: darken($color: $colorTertiary, $amount: 20);
+            background-color: $colorTertiary;
         }
     }
     &__title {

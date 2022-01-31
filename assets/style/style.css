@@ -134,7 +134,7 @@ h1, .headerMenu__title, .footer__title {
   bottom: 0.4rem;
   height: 8%;
   width: 12%;
-  background-color: #4acbab;
+  background-color: #99E2D0;
 }
 .subMenu__title {
   text-transform: uppercase;
@@ -213,6 +213,7 @@ h1, .headerMenu__title, .footer__title {
   right: 0;
   bottom: 0;
   left: 2rem;
+  font-size: 1.2rem;
 }
 
 .footer {
