@@ -4,7 +4,7 @@
     padding: 1rem 0 .1rem 0;
     &__title {
         color: #ffffff;
-        font-size: 1.2rem;
+        font-size: map-get($map: $font-size, $key: text);
         margin: 0 0 3rem 2rem;
     }
     &__list {

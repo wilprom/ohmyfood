@@ -23,7 +23,7 @@
             margin: .4rem 1rem 0 0;
             &__like {
                 background-color: #f6f6f6;
-                font-size: 1.6rem;
+                font-size: map-get($map: $font-size, $key: icon);
             }
         }
     }
