@@ -54,12 +54,27 @@
         border-radius: $radius - 1.2;
         box-shadow: .10rem .10rem 1rem #00000021;
         overflow: hidden;
+        animation: appearanceOfFood $anim-dur ease-in-out forwards;
         &:hover{
             & .subMenu__check {
                 margin-right: 0;
                 & i {
                     transform: rotate(0);
                 }
+            }
+        }
+        @for $i from 1 through 10 {
+            &--#{$i} {
+                transform: scale(0);
+                animation-delay: $anim-delay * $i;
+            }
+        }
+        @keyframes appearanceOfFood{
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
             }
         }
     }

@@ -148,12 +148,61 @@ h1, .headerMenu__title, .footer__title {
   border-radius: 0.8rem;
   box-shadow: 0.1rem 0.1rem 1rem #00000021;
   overflow: hidden;
+  animation: appearanceOfFood 600ms ease-in-out forwards;
 }
 .subMenu__food:hover .subMenu__check {
   margin-right: 0;
 }
 .subMenu__food:hover .subMenu__check i {
   transform: rotate(0);
+}
+.subMenu__food--1 {
+  transform: scale(0);
+  animation-delay: 60ms;
+}
+.subMenu__food--2 {
+  transform: scale(0);
+  animation-delay: 120ms;
+}
+.subMenu__food--3 {
+  transform: scale(0);
+  animation-delay: 180ms;
+}
+.subMenu__food--4 {
+  transform: scale(0);
+  animation-delay: 240ms;
+}
+.subMenu__food--5 {
+  transform: scale(0);
+  animation-delay: 300ms;
+}
+.subMenu__food--6 {
+  transform: scale(0);
+  animation-delay: 360ms;
+}
+.subMenu__food--7 {
+  transform: scale(0);
+  animation-delay: 420ms;
+}
+.subMenu__food--8 {
+  transform: scale(0);
+  animation-delay: 480ms;
+}
+.subMenu__food--9 {
+  transform: scale(0);
+  animation-delay: 540ms;
+}
+.subMenu__food--10 {
+  transform: scale(0);
+  animation-delay: 600ms;
+}
+@keyframes appearanceOfFood {
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .subMenu__content {
   flex: 1;
