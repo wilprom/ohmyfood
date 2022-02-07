@@ -47,4 +47,7 @@
             background-color: $colorTertiary;
         }
     }
+    @include mobile-and-Tablet {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

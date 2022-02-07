@@ -28,3 +28,9 @@
     bottom: 0;
     left: 0;
 }
+
+@mixin mobile-and-Tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}

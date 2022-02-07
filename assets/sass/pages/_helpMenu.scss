@@ -31,4 +31,9 @@
         }
 
     }
+    @include mobile-and-Tablet {
+        &__steps {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
