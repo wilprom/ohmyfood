@@ -4,7 +4,7 @@
   "description": "ohmyfood est un site proposant le menu de 4 grands restaurants parisiens permettant la réservation en ligne et la composition de menus.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/sass/main.scss:./assets/style/style.css",
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/style/style.css --style compressed",
     "prefix": "postcss ./assets/style/style.css --use autoprefixer -d ./assets/style/prefixed/"
   },
   "repository": {
