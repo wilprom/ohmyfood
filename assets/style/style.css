@@ -245,7 +245,7 @@ h1, .headerMenu__title, .footer__title {
   transform: rotate(90deg);
   transition: transform 500ms cubic-bezier(0.36, 0.44, 0, 0.88);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .subMenu-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -421,7 +421,7 @@ h1, .headerMenu__title, .footer__title {
   margin-right: 0.8rem;
   color: #818181;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .helpMenu__steps {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -478,7 +478,7 @@ h1, .headerMenu__title, .footer__title {
   border-radius: 0.2rem;
   background-color: #99E2D0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
   }
