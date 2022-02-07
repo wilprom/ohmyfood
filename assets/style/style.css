@@ -140,8 +140,8 @@ h1, .headerMenu__title, .footer__title {
   position: absolute;
   content: "";
   bottom: 0.4rem;
-  height: 8%;
-  width: 12%;
+  height: 0.25rem;
+  width: 3rem;
   background-color: #99E2D0;
 }
 .subMenu__title {
