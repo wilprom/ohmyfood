@@ -10,10 +10,10 @@
     }
     &__arrow {
         position: absolute;
-        top: 2rem;
+        top: 1.8rem;
         right: 0;
         bottom: 0;
         left: 2rem;
-        font-size: 1.2rem;
+        font-size: map-get($map: $font-size, $key: icon) - .4;
     }
 }
