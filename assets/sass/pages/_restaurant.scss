@@ -6,7 +6,7 @@
 .cards {
     @include grid-layout;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem 2rem;
+    gap: 2rem 2rem;
     .card {
         display: block;
         background-color: #ffffff;

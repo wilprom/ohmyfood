@@ -3,7 +3,7 @@
     &__steps {
         @include grid-layout;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
+        gap: 2rem;
         margin-left: .8rem;
         &__step { 
             @include flexbox;
