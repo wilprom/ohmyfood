@@ -1,181 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary meta tag -->
-    <link rel="icon" href="./assets/img/favicon.ico"/>
+    <link rel="icon" href="./assets/img/favicon.ico" />
     <title>Restaurant "A la française" - ohmyfood</title>
-    <meta name="title" content='Restaurant "A la française" - ohmyfood'>
-    <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
+    <meta name="title" content='Restaurant "A la française" - ohmyfood' />
+    <meta
+      name="description"
+      content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants."
+    />
 
     <!-- Twitter Card data -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content='Restaurant "A la française" - ohmyfood'>
-    <meta property="twitter:description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content='Restaurant "A la française" - ohmyfood'
+    />
+    <meta
+      property="twitter:description"
+      content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants."
+    />
     <!-- Twitter Summary card images must be at least 200x200px -->
-    <meta name="twitter:image" content="https://github.com/WilfriedProm/ohmyfood/blob/main/assets/img/logo/seo.png?raw=true">
+    <meta
+      name="twitter:image"
+      content="https://github.com/WilfriedProm/ohmyfood/blob/main/assets/img/logo/seo.png?raw=true"
+    />
 
     <!-- Open Graph data -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content='Restaurant "A la française" - ohmyfood'>
-    <meta property="og:description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
-    <meta property="og:image" content="https://github.com/WilfriedProm/ohmyfood/blob/main/assets/img/logo/seo.png?raw=true"/>
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content='Restaurant "A la française" - ohmyfood'
+    />
+    <meta
+      property="og:description"
+      content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/WilfriedProm/ohmyfood/blob/main/assets/img/logo/seo.png?raw=true"
+    />
 
     <!--Link css-->
-    <link rel="stylesheet" href="./assets/style/prefixed/style.css">
+    <link rel="stylesheet" href="./assets/style/prefixed/style.css" />
     <!--End link css-->
-    
+
     <!-- Script fontAwesome -->
-    <script src="https://kit.fontawesome.com/583e3f93e8.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/3cca219877.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <h1 class="header__title">ohmyfood</h1>
-        <a href="./index.html" class="header__arrow"><i class="fas fa-arrow-left"></i></a>
+      <h1 class="header__title">ohmyfood</h1>
+      <a href="./index.html" class="header__arrow"
+        ><i class="fas fa-arrow-left"></i
+      ></a>
     </header>
     <!-- End Header -->
 
     <!-- Main -->
     <main>
-        <div class="heroMenu">
-            <img src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="heroMenu__img">
+      <div class="heroMenu">
+        <img
+          src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="À la française"
+          class="heroMenu__img"
+        />
+      </div>
+      <!-- Restaurant menu -->
+      <section class="restaurantMenu">
+        <!-- Header menu -->
+        <div class="headerMenu">
+          <h2 class="headerMenu__title">À la française</h2>
+          <div class="icon">
+            <i class="far fa-heart icon__like icon__like--noBg"></i>
+            <i class="fas fa-heart icon__like icon__like--bg"></i>
+          </div>
         </div>
-        <!-- Restaurant menu -->
-        <section class="restaurantMenu">
-            <!-- Header menu -->
-            <div class="headerMenu">
-                <h2 class="headerMenu__title">À la française</h2>
-                <div class="icon">
-                    <i class="far fa-heart icon__like icon__like--noBg"></i>         
-                    <i class="fas fa-heart icon__like icon__like--bg"></i>
-                </div>     
-            </div>
-            <!-- End Header menu -->
+        <!-- End Header menu -->
 
-            <!-- Sub menu -->
-            <div class="subMenu-container">
-                <div class="subMenu">
-                    <div class="subMenu__item">
-                        <h2 class="subMenu__title">entrées</h2>
-                    </div>
-                    <div class="subMenu__food subMenu__food--1">
-                        <div class="subMenu__content">
-                            <h4>Tartare de poulpe acidulé</h4>
-                            <p>Aux zests d'orange</p>
-                        </div>
-                        <div class="subMenu__price">25€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="subMenu__food subMenu__food--2">
-                        <div class="subMenu__content">
-                            <h4>Velouté de légumes d'antan</h4>
-                            <p>Carotte, panais, topinambour</p>
-                        </div>
-                        <div class="subMenu__price">35€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="subMenu__food subMenu__food--3">
-                        <div class="subMenu__content">
-                            <h4>Soupe à l'oignon</h4>
-                            <p>Revisité</p>
-                        </div>
-                        <div class="subMenu__price">20€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                </div>
-                <div class="subMenu">
-                    <div class="subMenu__item">
-                        <h2 class="subMenu__title">plats</h2>
-                    </div>
-                    <div class="subMenu__food subMenu__food--4">
-                        <div class="subMenu__content">
-                            <h4>Coquilles Saint-Jacques</h4>
-                            <p>Accompagné d'une purée de panais</p>
-                        </div>
-                        <div class="subMenu__price">40€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="subMenu__food subMenu__food--5">
-                        <div class="subMenu__content">
-                            <h4>Magret de canard</h4>
-                            <p>Et parmentier de pommes de terres</p>
-                        </div>
-                        <div class="subMenu__price">35€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="subMenu__food subMenu__food--6">
-                        <div class="subMenu__content">
-                            <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                            <p>Sur son lit de gnocchis aux légumes</p>
-                        </div>
-                        <div class="subMenu__price">44€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                </div>
-                <div class="subMenu">
-                    <div class="subMenu__item">
-                        <h2 class="subMenu__title">dessert</h2>
-                    </div>
-                    <div class="subMenu__food subMenu__food--7">
-                        <div class="subMenu__content">
-                            <h4>Pétales de violettes glacés</h4>
-                            <p>Et purée de noisettes</p>
-                        </div>
-                        <div class="subMenu__price">18€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="subMenu__food subMenu__food--8">
-                        <div class="subMenu__content">
-                            <h4>Fondant au chocolat</h4>
-                            <p>Revisité</p>
-                        </div>
-                        <div class="subMenu__price">22€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                    <div class="subMenu__food subMenu__food--9">
-                        <div class="subMenu__content">
-                            <h4>Millefeuille croustillant</h4>
-                            <p>Myrtilles et pâtes d'amande</p>
-                        </div>
-                        <div class="subMenu__price">23€</div>
-                        <div class="subMenu__check"><i class="fas fa-check-circle"></i></div>
-                    </div>
-                </div>
+        <!-- Sub menu -->
+        <div class="subMenu-container">
+          <div class="subMenu">
+            <div class="subMenu__item">
+              <h2 class="subMenu__title">entrées</h2>
             </div>
-            <!-- End Sub menu -->
+            <div class="subMenu__food subMenu__food--1">
+              <div class="subMenu__content">
+                <h4>Tartare de poulpe acidulé</h4>
+                <p>Aux zests d'orange</p>
+              </div>
+              <div class="subMenu__price">25€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="subMenu__food subMenu__food--2">
+              <div class="subMenu__content">
+                <h4>Velouté de légumes d'antan</h4>
+                <p>Carotte, panais, topinambour</p>
+              </div>
+              <div class="subMenu__price">35€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="subMenu__food subMenu__food--3">
+              <div class="subMenu__content">
+                <h4>Soupe à l'oignon</h4>
+                <p>Revisité</p>
+              </div>
+              <div class="subMenu__price">20€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="subMenu">
+            <div class="subMenu__item">
+              <h2 class="subMenu__title">plats</h2>
+            </div>
+            <div class="subMenu__food subMenu__food--4">
+              <div class="subMenu__content">
+                <h4>Coquilles Saint-Jacques</h4>
+                <p>Accompagné d'une purée de panais</p>
+              </div>
+              <div class="subMenu__price">40€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="subMenu__food subMenu__food--5">
+              <div class="subMenu__content">
+                <h4>Magret de canard</h4>
+                <p>Et parmentier de pommes de terres</p>
+              </div>
+              <div class="subMenu__price">35€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="subMenu__food subMenu__food--6">
+              <div class="subMenu__content">
+                <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                <p>Sur son lit de gnocchis aux légumes</p>
+              </div>
+              <div class="subMenu__price">44€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="subMenu">
+            <div class="subMenu__item">
+              <h2 class="subMenu__title">dessert</h2>
+            </div>
+            <div class="subMenu__food subMenu__food--7">
+              <div class="subMenu__content">
+                <h4>Pétales de violettes glacés</h4>
+                <p>Et purée de noisettes</p>
+              </div>
+              <div class="subMenu__price">18€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="subMenu__food subMenu__food--8">
+              <div class="subMenu__content">
+                <h4>Fondant au chocolat</h4>
+                <p>Revisité</p>
+              </div>
+              <div class="subMenu__price">22€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+            <div class="subMenu__food subMenu__food--9">
+              <div class="subMenu__content">
+                <h4>Millefeuille croustillant</h4>
+                <p>Myrtilles et pâtes d'amande</p>
+              </div>
+              <div class="subMenu__price">23€</div>
+              <div class="subMenu__check">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sub menu -->
 
-            <!-- Order validation -->
-            <div class="orderValidation">
-                <button class="btn">Commander</button>
-            </div>
-            <!-- End Order validation -->
-        </section>
-        <!-- Restaurant menu -->
+        <!-- Order validation -->
+        <div class="orderValidation">
+          <button class="btn">Commander</button>
+        </div>
+        <!-- End Order validation -->
+      </section>
+      <!-- Restaurant menu -->
     </main>
     <!-- End Main -->
 
     <!-- Footer -->
     <footer class="footer">
-        <span class="footer__title">ohmyfood</span>
-        <ul class="footer__list">
-            <li>
-                <a href="">
-                <i class="fas fa-utensils footer__icon"></i>Proposer un restaurant
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fas fa-hands-helping footer__icon--spc"></i>Devenir partenaire
-                </a>
-            </li>
-            <li><a href="">Mentions légales</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+      <span class="footer__title">ohmyfood</span>
+      <ul class="footer__list">
+        <li>
+          <a href="">
+            <i class="fas fa-utensils footer__icon"></i>Proposer un restaurant
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-hands-helping footer__icon--spc"></i>Devenir
+            partenaire
+          </a>
+        </li>
+        <li><a href="">Mentions légales</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
     </footer>
     <!-- End Footer -->
-</body>
+  </body>
 </html>
